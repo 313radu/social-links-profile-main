@@ -1,8 +1,5 @@
 :root {
-
-    --max-width: 80em;
-    --min-width: 23.4375em;
-
+    
     /* Colors */
     --clr-primary-100: hsl(75, 94%, 57%);
 
