@@ -1,0 +1,135 @@
+:root {
+
+    --max-width: 80em;
+    --min-width: 23.4375em;
+
+    /* Colors */
+    --clr-primary-100: hsl(75, 94%, 57%);
+
+    --clr-neutral-100: hsl(0, 0%, 100%);
+    --clr-neutral-200: hsl(0, 0%, 20%);
+    --clr-neutral-300: hsl(0, 0%, 12%);
+    --clr-neutral-400: hsl(0, 0%, 8%);
+
+    /* Font Size */
+    --fs-100: 0.875rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    background-color: var(--clr-neutral-400);
+}
+
+@font-face {
+    font-family: "bold";
+    src: url("./assets/fonts/static/Inter-Bold.ttf");
+}
+
+@font-face {
+    font-family: "regular";
+    src: url('./assets/fonts/static/Inter-Regular.ttf');
+
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'semiBold';
+    src: url("./assets/fonts/static/Inter-SemiBold.ttf");
+}
+
+
+/* Global Setup */
+
+article {
+    width: 340px;
+    height: 500px;
+    background-color: var(--clr-neutral-300);
+    border-radius: .75em;
+}
+
+article section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Section 1 */
+
+article .top {
+    height: 38%;
+    justify-content: space-around;
+    margin-top: 1em;
+}
+
+article .top img {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+}
+
+article .top h1{
+    color: var(--clr-neutral-100);
+    font-family: semiBold, sans-serif;
+}
+article .top span {
+    color: var(--clr-primary-100);
+    font-size: .75rem;
+    font-family: bold;
+    padding-bottom: 1em;
+    transform: translateY(-7px);
+}
+
+article .top p {
+    color: var(--clr-neutral-100);
+    font-family: regular, sans-serif;
+    font-size: .75rem;
+}
+/* Section 2 */
+
+article .bottom {
+    height: 60%;
+    display :flex;
+    align-items: center;
+    gap: .8em;
+    margin-top: 1em;
+    padding-bottom: 2em;
+}
+
+article .bottom button {
+    width: 80%;
+    height: 40px;
+    border-radius: .75em;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: var(--clr-neutral-100);
+    background-color: var(--clr-neutral-200);
+    transition: 500ms ease-in-out;
+    font-family: semiBold, sans-serif;
+    font-size: var(--fs-100);
+}
+
+article .bottom button:hover,
+article .bottom button:focus {
+    color: var(--clr-neutral-400);
+    background-color: var(--clr-primary-100);
+    transition: 500ms ease-in-out;
+}
